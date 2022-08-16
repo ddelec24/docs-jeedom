@@ -2,8 +2,8 @@
 
 ## Plugin Signal
 
-- [Documentation](/signal/fr_FR)  
-- [Changelog](/signal/fr_FR/changelog)  
+- [Documentation](/docs-jeedom/signal/fr_FR)  
+- [Changelog](/docs-jeedom/signal/fr_FR/changelog)  
 
-- [Documentation Beta](/signal/fr_FR/beta)  
-- [Changelog Beta](/signal/fr_FR/beta/changelog)  
+- [Documentation Beta](/docs-jeedom/signal/fr_FR/beta)  
+- [Changelog Beta](/docs-jeedom/signal/fr_FR/beta/changelog)  
