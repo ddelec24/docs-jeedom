@@ -5,7 +5,7 @@
 ## Présentation
 
 Ce plugin a pour but de communiquer via la messagerie Signal.  
-Vous pouvez ainsi recevoir des notifications directement sur votre smartphone équipement de l'application Signal. La récupération des messages est aussi activable (elle demande un peu plus de ressources, mais les tests sur un Raspberry pi3b+ montrent que c'est presque instantané).
+Vous pouvez ainsi recevoir des notifications directement sur votre smartphone équipé de l'application Signal. La récupération des messages est aussi activable (elle demande un peu plus de ressources, mais les tests sur un Raspberry pi3b+ montrent que c'est presque instantané).
   
     
 ## Prérequis
@@ -39,7 +39,7 @@ Maintenant que vous avez activé le service et qu'il est opérationnel dans la c
 
 ![image](https://user-images.githubusercontent.com/3704897/184929561-3a924077-0913-45ae-b0d1-939eeebe483d.png)
 
-Comme montré sur l'image ci dessus, il faut saisir votre numéro au format international!
+Comme montré sur l'image ci-dessus, il faut saisir votre numéro au format international!
 le plus simple est d'aller le récupérer sur votre téléphone, dans votre profil:  
 /!\ Saisissez le sans les espaces!  
 
