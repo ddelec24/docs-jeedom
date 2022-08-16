@@ -2,5 +2,5 @@
 
 ## Plugin Signal
 
-[Documentation](/signal/fr_FR)
-[Changelog](/signal/fr_FR/changelog)
+- [Documentation](/signal/fr_FR)  
+- [Changelog](/signal/fr_FR/changelog)  
