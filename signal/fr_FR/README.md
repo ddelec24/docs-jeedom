@@ -40,16 +40,57 @@ Maintenant que vous avez activé le service et qu'il est opérationnel dans la c
 ![image](https://user-images.githubusercontent.com/3704897/184929561-3a924077-0913-45ae-b0d1-939eeebe483d.png)
 
 Comme montré sur l'image ci dessus, il faut saisir votre numéro au format international!
-le plus simple est d'aller le récupérer sur votre téléphone, dans votre profil:
-![image](https://user-images.githubusercontent.com/3704897/184929695-49e3c901-fe57-46f4-976d-0f9e87cfd270.png)
+le plus simple est d'aller le récupérer sur votre téléphone, dans votre profil:  
+/!\ Saisissez le sans les espaces!  
 
-**/!\ Saisissez le sans les espaces!**
-  
-  
+![image](https://user-images.githubusercontent.com/3704897/184930299-a86e686d-bbf9-4fdf-8896-71fc1de58185.png) 
+
+**Enregistrez votre nouvel équipement**, puis cliquez sur le lien permettant l'association:  
+![image](https://user-images.githubusercontent.com/3704897/184930054-aa347d98-1113-4c75-9bda-621228e30cb3.png)
+
+Une page doit s'ouvrir avec un QRcode. Il est à usage unique et change à chaque fois. Prenez le smartphone ayant le numéro précédemment saisi puis dans le menu **Appareils reliés** => bouton [+] => Scannez. L'association est faite. Vous pouvez actualiser la page après quelques secondes, la pastille doit devenir verte.  
+
+### Les commandes
+
+![image](https://user-images.githubusercontent.com/3704897/184930963-63c30efc-27e0-4d57-b3e0-15211097f832.png)
+
+- "Message reçu" correspond au message en lui-même. Ainsi vous pouvez utiliser cette commande pour déclencher des actions dans jeedom.  
+- "Message brut reçu" existe car elle contient d'autres informations qui pourraient être interessantes dans des cas particuliers. Il y a les timestamps d'envoi par exemple. Information brute au encodé au format json.  
+- "Envoi de message" permet d'envoyer un message simple.  
+- "Envoi de fichier" permet aussi d'envoyer un message mais avec une pièce jointe. Les limitations sont à priori celles de signal (donc dépendant d'Android/iOS) mais au minimum 100Mo.   
+
+Les messages reçus sont historisés 3 mois par défaut. Vous pouvez changer dans la configuration de la commande, bien évidemment.
+
+## Utilisation sur le dashboard
+
+![image](https://user-images.githubusercontent.com/3704897/184935108-e563830f-6ad3-4d0f-a7c6-6b516b5f1444.png)  
+
+La tuile est toute simple car on est sur un plugin qui a surtout une utilité d'intéractions. On peut envoyer et recevoir un message (destinataire = expéditeur = numéro de l'équipement).  
+
 ## Utilisation en scénarios
 
+Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voici quelques exemples simples:  
 
+![image](https://user-images.githubusercontent.com/3704897/184935002-5e0a489d-b5e0-4707-958f-73bc854d7f96.png)  
+
+Sélectionnez la commande action qui va envoyer le message (et donc le numéro qui sera utilisé en tant qu'expéditeur), mettez votre message et le numéro qui doit recevoir le message (Attention il doit aussi exister dans le plugin et être actif!).  
+  
+Dans le cadre d'une pièce-jointe. vous pouvez utiliser une variable, un tag, une commande, peut importe. La valeur doit être soit un **lien internet** soit un **chemin local** (exemple: */home/jeedom/ma_video.mp4*)  
+Dans ma capture, je recevrais un screenshot de ma caméra.  
+  
+  
+En intéraction, on peut faire un systeme de Ask ou comme ceci:  
+![image](https://user-images.githubusercontent.com/3704897/184937800-e43b6364-cf2b-4e0d-b34c-4b7d43de3283.png)  
+
+Votre déclencheur sera là votre commande de message reçu. Vous pouvez répondre dans la foulée à votre smartphone!  
+
+
+Voilà pour l'usage classique. On peut aller plus loin et bien sûr j'attends vos remontées si il y a des axes de développement ou améliorations.  
+
+  
 ## Aide - FAQ
+
+> Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoir plus d'informations. N'hésitez pas à mettre le mode debug il y aura pleins d'informations supplémentaires pour vous aider.  
 
 - Je n'arrive pas à associer un nouvel équipement / le QRcode n'apparait pas il affiche une erreur.
 - > Dans la configuration du plugin, il est impératif de désactiver la réception des messages, sauvegarder, puis appuyer sur le bouton pour réinstaller le service. Une fois en route, vous devriez pouvoir ajouter le nouveau numéro. Pensez ensuite à faire la marche inverse en recochant la réception une fois terminée! C'est une limitation dans le fonctionnement de l'API on est obligé faire comme çà.
