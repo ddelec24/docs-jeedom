@@ -48,7 +48,7 @@ le plus simple est d'aller le récupérer sur votre téléphone, dans votre prof
 **Enregistrez votre nouvel équipement**, puis cliquez sur le lien permettant l'association:  
 ![image](https://user-images.githubusercontent.com/3704897/184930054-aa347d98-1113-4c75-9bda-621228e30cb3.png)
 
-Une page doit s'ouvrir avec un QRcode. Il est à usage unique et change à chaque fois. Prenez le smartphone ayant le numéro précédemment saisi puis dans le menu **Appareils reliés** => bouton [+] => **Scannez** puis fermez la page avec le QRcode. 
+Une page doit s'ouvrir avec un QRcode. Il est à usage unique et change à chaque fois. Prenez le smartphone ayant le numéro précédemment saisi puis dans le menu **Appareils reliés** => bouton [+] => **Scannez** puis fermez la page avec le QRcode.  
 L'association est faite. Vous pouvez actualiser la page de votre équipement après quelques secondes, la pastille doit devenir verte.  
 
 ### Les commandes
