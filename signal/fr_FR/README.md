@@ -112,4 +112,5 @@ Voilà pour l'usage classique. On peut aller plus loin et bien sûr j'attends vo
 
 - Le nom des pièces jointe n'est pas personnalisable. lorsqu'il s'agit d'un fichier ne s'affichant pas ( un zip pdf etc...) le nom sera une suite de caractères. Le développeur à implanté la fonctionnalité il y a une dizaine de jours, j'attends qu'il mette ça en production !  
 
-- Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
+    ---------------------------------------------------------------
+Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
