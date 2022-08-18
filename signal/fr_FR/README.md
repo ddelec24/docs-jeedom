@@ -69,7 +69,7 @@ En revenant voir dans la configuration générale on aura une option permettant 
 Après avoir coché la case, vous pourrez choisir le numéro à mettre en écoute dans jeedom pour les intéractions.  
 Vous devez **sauvegarder** la configuration bien entendu, mais vous devez aussi cliquer de nouveau sur le bouton **Installation/Réinstallation du service** même si celui-ci était déjà installé et que vous aviez la pastille verte.  
   
-Vous devez ensuite redémarrer le démon.  
+Le démon devrait se relancer automatiquement.
   
 ## Utilisation sur le dashboard
 
@@ -102,6 +102,9 @@ Voilà pour l'usage classique. On peut aller plus loin et bien sûr j'attends vo
 
 > Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoir plus d'informations. N'hésitez pas à mettre le mode debug il y aura pleins d'informations supplémentaires pour vous aider.  
 
+- Je ne peux pas redémarrer le démon, est-ce normal?  
+  > Il faut au préalable activer la réception des messages car il n'est nécessaire que dans ce cas précis. Inutile de faire tourner un démon inutilement.  
+  
 - Dois-je avoir un numéro signal dédié pour jeedom?  
  > C'est vous qui voyez. Sur votre smartphone vous pouvez intéragir en envoyant sur votre propre numéro. Signal vous dira "Note à mon intention" mais la communication se fait sans problème!  
   
