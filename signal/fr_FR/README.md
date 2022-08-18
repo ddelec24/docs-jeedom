@@ -98,12 +98,13 @@ Votre déclencheur sera là votre commande de message reçu. Vous pouvez répond
 Voilà pour l'usage classique. On peut aller plus loin et bien sûr j'attends vos remontées si il y a des axes de développement ou améliorations.   
   
   
-## Aide - FAQ
-
-> Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoir plus d'informations. N'hésitez pas à mettre le mode debug il y aura pleins d'informations supplémentaires pour vous aider.  
-
+## Aide - FAQ  
+  
+Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoir plus d'informations. N'hésitez pas à mettre le mode debug il y aura pleins d'informations supplémentaires pour vous aider.  
+  
+  
 - Je ne peux pas redémarrer le démon, est-ce normal?  
-  > Il faut au préalable activer la réception des messages car il n'est nécessaire que dans ce cas précis. Inutile de faire tourner un démon inutilement.  
+ > Il faut au préalable activer la réception des messages car il n'est nécessaire que dans ce cas précis. Inutile de faire tourner un démon inutilement.  
   
 - Dois-je avoir un numéro signal dédié pour jeedom?  
  > C'est vous qui voyez. Sur votre smartphone vous pouvez intéragir en envoyant sur votre propre numéro. Signal vous dira "Note à mon intention" mais la communication se fait sans problème!  
@@ -113,7 +114,7 @@ Voilà pour l'usage classique. On peut aller plus loin et bien sûr j'attends vo
 
 ### Problèmes connus
 
-- Le nom des pièces jointe n'est pas personnalisable. lorsqu'il s'agit d'un fichier ne s'affichant pas ( un zip pdf etc...) le nom sera une suite de caractères. Le développeur à implanté la fonctionnalité il y a une dizaine de jours, j'attends qu'il mette ça en production !  
+- Le nom des pièces jointes n'est pas personnalisable. lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
 
     ---------------------------------------------------------------
 Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
