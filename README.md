@@ -1,6 +1,5 @@
 # Accueil de la documentation des plugins pour jeedom
   
-<a href="https://gitlocalize.com/repo/7857/en?utm_source=badge"> <img src="https://gitlocalize.com/repo/7857/en/badge.svg" /> </a>  
   
 ## Plugin Pterodactyl  
   
