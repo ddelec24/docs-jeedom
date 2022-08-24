@@ -1,4 +1,4 @@
-# Bienvenue sur le plugin Pterodactyl
+# Plugin Pterodactyl
 
 Ce plugin permet de faire la liaison entre votre panel [Pterodactyl](https://pterodactyl.io/) et Jeedom que vous soyez un simple utilisateur ou un administrateur.
 
