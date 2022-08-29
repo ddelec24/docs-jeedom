@@ -53,7 +53,7 @@ L'association est faite. Vous pouvez actualiser la page de votre équipement apr
 ![image](https://user-images.githubusercontent.com/3704897/184930963-63c30efc-27e0-4d57-b3e0-15211097f832.png)  
 
 - "Message reçu" correspond au message en lui-même. Ainsi vous pouvez utiliser cette commande pour déclencher des actions dans jeedom.  
-- "Message brut reçu" existe car elle contient d'autres informations qui pourraient être interessantes dans des cas particuliers. Il y a les timestamps d'envoi par exemple. Information brute au encodé au format json.  
+- "Message brut reçu" existe car elle contient d'autres informations qui pourraient être interessantes dans des cas particuliers. Il y a les timestamps d'envoi par exemple. Information brute au encodée au format json.  
 - "Envoi de message" permet d'envoyer un message simple.  
 - "Envoi de fichier" permet aussi d'envoyer un message mais avec une pièce jointe. Les limitations sont à priori celles de signal (donc dépendant d'Android/iOS) mais au minimum 100Mo.   
 
@@ -89,7 +89,7 @@ Dans le cadre d'une pièce-jointe. vous pouvez utiliser une variable, un tag, un
 Dans ma capture ci-dessus, je recevrais un screenshot de ma caméra.  
   
   
-En intéraction, on peut faire un systeme de Ask ou comme ceci:  
+En intéraction, on peut faire un système de Ask ou comme ceci:  
 ![image](https://user-images.githubusercontent.com/3704897/184937800-e43b6364-cf2b-4e0d-b34c-4b7d43de3283.png)  
 
 Votre déclencheur sera là votre commande de message reçu. Vous pouvez répondre dans la foulée à votre smartphone!  
