@@ -3,6 +3,11 @@
 > **IMPORTANT**  
 >  
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
+  
+  
+# 29/08/2022 - CETTE VERSION PASSE EN STABLE  
+  
+- Suppression de l'affichage de l'onglet commandes pour les équipements de type instance.  
 
 # 24/08/2022 - BETA  
   
