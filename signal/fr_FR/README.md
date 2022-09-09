@@ -121,7 +121,7 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
  ```bash  
   sudo apt remove -y docker-ce docker-ce-cli containerd.io && sudo apt purge -y docker-ce containerd.io && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean  
  ```  
-  
+  Suite à ça, vous pouvez relancer les dépendances, attendre 5 minutes que tout se mette en place, et continuer l'installation du service Api.
   
 ## Problèmes connus
 
