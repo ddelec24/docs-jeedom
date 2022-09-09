@@ -109,10 +109,21 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
 - Dois-je avoir un numéro signal dédié pour jeedom?  
  > C'est vous qui voyez. Sur votre smartphone vous pouvez intéragir en envoyant sur votre propre numéro. Signal vous dira "Note à mon intention" mais la communication se fait sans problème!  
   
-- Je n'arrive pas à associer un nouvel équipement / le QRcode n'apparait pas il affiche une erreur.
- > Dans la configuration du plugin, il est impératif de désactiver la réception des messages, sauvegarder, puis appuyer sur le bouton pour réinstaller le service. Une fois en route avec la pastille verte, vous devriez pouvoir ajouter le nouveau numéro. Pensez ensuite à faire la marche inverse en recochant la réception une fois terminée! C'est une limitation dans le fonctionnement de l'API on est obligé faire comme ça.
-
-### Problèmes connus
+- Je n'arrive pas à associer un nouvel équipement / le QRcode n'apparaît pas et affiche une erreur.  
+ > Tout d'abord, il faut être en local pour effectuer la manipulation.  
+ Ensuite dans la configuration du plugin, il est impératif de désactiver la réception des messages, de sauvegarder, puis d'appuyer sur le bouton pour réinstaller le service. Une fois en route avec la pastille verte, vous devriez pouvoir ajouter le nouveau numéro. Pensez ensuite à faire la marche inverse en recochant la réception, sauvegarder et de nouveau une réinstallation du service! C'est une limitation dans le fonctionnement de l'API, on est obligé faire comme ça.  
+  
+- J'ai un message m'indiquant *"Erreur d'exécution de la commande : sudo docker-compose -f /tmp/XXXXXXXX.yml up -d --force-recreate(1) => []"*. Que dois-je faire?  
+ > Cela peut arriver la première fois. Le service docker met un certain temps à s'initialiser. Patientez 5 minutes puis retenter d'activer le service signal Api dans la page de configuration.  
+  
+- J'ai des erreurs (pas juste des warning qui sont normaux) lors de l'installation des dépendances, comment y remédier?  
+ > Si vous aviez une ancienne installation docker, il se peut que cela pose problème. Si vous êtes sûr de ne pas utiliser docker, alors lancez en SSH la commande suivante qui va nettoyer proprement votre système de docker et ses dépendances:  
+ ```bash  
+  sudo apt remove -y docker-ce docker-ce-cli containerd.io && sudo apt purge -y docker-ce containerd.io && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean  
+ ```  
+  
+  
+## Problèmes connus
 
 - Le nom des pièces jointes n'est pas personnalisable. lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
 
