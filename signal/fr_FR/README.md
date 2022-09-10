@@ -10,7 +10,7 @@ Vous pouvez ainsi recevoir des notifications directement sur votre smartphone é
     
 ## Prérequis
 
-Même si c'est automatisé avec **Jeedom 4.2**, je précise que la connexion avec votre compte signal est isolée dans un container Docker, via le plugin *Docker Management* (plugin officiel de Jeedom). NodeJS est aussi installé en même temps que le plugin.
+Même si c'est automatisé avec **Jeedom 4.2**, je précise que la connexion avec votre compte signal est isolée dans un container Docker, via le plugin *Docker Management* (plugin officiel de Jeedom). NPM et NodeJS sont aussi installés en même temps que le plugin.
 
 La première fois, il vous faudra votre ou vos smartphones pour une autorisation via QRCode.  
   
@@ -21,8 +21,9 @@ La première fois, il vous faudra votre ou vos smartphones pour une autorisation
 
 Il faut commencer par installer les dépendances.  
 
-![image](https://user-images.githubusercontent.com/3704897/185180907-ad18abe9-f680-4d88-a6ed-d3dfb38faa30.png)  
+![image](https://user-images.githubusercontent.com/3704897/189480719-58cb838a-2fdf-49fd-9d23-9b3416b51627.png)  
   
+Si vous voyez un encart rouge vous disant que *le service docker* n'est pas actif, c'est que le système n'a pas fini de s'initialiser. Merci de patienter et rafraichir la page jusqu'à ce qu'il disparaisse. Si il reste, merci de consulter la FAQ en bas de la documentation.  
   
 Concernant les paramètres généraux, il n'y a en principe pas besoin de modifier les 3 premières informations.  
 C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou que vous avez besoin de modifier le cycle de dialogue entre jeedom et le démon nodejs.  
@@ -34,7 +35,7 @@ C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou q
   
 Maintenant que vous avez activé le service et qu'il est opérationnel dans la configuration générale, il vous faut créer un nouvel équipement via "*Ajouter un numéro*" et associer votre appareil.  
 
-![image](https://user-images.githubusercontent.com/3704897/185184606-83059475-4977-4058-b38e-3fb427c8b735.png)  
+![image](https://user-images.githubusercontent.com/3704897/189481045-8e24d32a-bad5-491a-9d22-42374ee1823e.png)  
 
 Comme montré sur l'image ci-dessus, il faut saisir votre numéro au format international!
 le plus simple est d'aller le récupérer sur votre téléphone, dans votre profil:  
@@ -43,7 +44,7 @@ le plus simple est d'aller le récupérer sur votre téléphone, dans votre prof
 ![image](https://user-images.githubusercontent.com/3704897/184930299-a86e686d-bbf9-4fdf-8896-71fc1de58185.png)  
 
 **Enregistrez votre nouvel équipement**, puis cliquez sur le lien permettant l'association:  
-![image](https://user-images.githubusercontent.com/3704897/184930054-aa347d98-1113-4c75-9bda-621228e30cb3.png)  
+![image](https://user-images.githubusercontent.com/3704897/189481067-57cce93e-4062-4d76-ad54-3e1fa56b6087.png)  
 
 Une page doit s'ouvrir avec un QRcode. Il est à usage unique et change à chaque fois. Prenez le smartphone ayant le numéro précédemment saisi puis dans le menu **Appareils reliés** => bouton [+] => **Scannez** puis fermez la page avec le QRcode.  
 L'association est faite. Vous pouvez actualiser la page de votre équipement après quelques secondes, la pastille doit devenir verte.  
