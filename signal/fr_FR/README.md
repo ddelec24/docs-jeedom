@@ -51,9 +51,11 @@ L'association est faite. Vous pouvez actualiser la page de votre équipement apr
 
 ### Les commandes
 
-![image](https://user-images.githubusercontent.com/3704897/184930963-63c30efc-27e0-4d57-b3e0-15211097f832.png)  
+![image](https://user-images.githubusercontent.com/3704897/189669526-6e0d3d44-49c1-4b77-b53f-85e0c0f21207.png)    
 
 - "Message reçu" correspond au message en lui-même. Ainsi vous pouvez utiliser cette commande pour déclencher des actions dans jeedom.  
+- "Nom de l expéditeur" sera enregistré si disponible. Récupéré grâce à vos contacts signal.  
+- "Numéro de l expéditeur" contient le numéro de l'expéditeur du message que vous venez de recevoir.  
 - "Message brut reçu" existe car elle contient d'autres informations qui pourraient être interessantes dans des cas particuliers. Il y a les timestamps d'envoi par exemple. Information brute au encodée au format json.  
 - "Envoi de message" permet d'envoyer un message simple.  
 - "Envoi de fichier" permet aussi d'envoyer un message mais avec une pièce jointe. Les limitations sont à priori celles de signal (donc dépendant d'Android/iOS) mais au minimum 100Mo.   
@@ -74,7 +76,7 @@ Le démon devrait se relancer automatiquement.
   
 ## Utilisation sur le dashboard
 
-![image](https://user-images.githubusercontent.com/3704897/184935108-e563830f-6ad3-4d0f-a7c6-6b516b5f1444.png)  
+![image](https://user-images.githubusercontent.com/3704897/189668206-131be4ec-779e-4cdf-8dfe-20f1d115134f.png)   
 
 La tuile est toute simple car on est sur un plugin qui a surtout une utilité d'intéractions. On peut envoyer et recevoir un message (destinataire = expéditeur = numéro de l'équipement).  
 
@@ -126,7 +128,7 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
   
 ## Problèmes connus
 
-- Le nom des pièces jointes n'est pas personnalisable. lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
+- Le nom des pièces jointes n'est pas personnalisable. Lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
 
     ---------------------------------------------------------------
 Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
