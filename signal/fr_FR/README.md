@@ -23,7 +23,7 @@ Il faut commencer par installer les dépendances.
 
 ![image](https://user-images.githubusercontent.com/3704897/189480719-58cb838a-2fdf-49fd-9d23-9b3416b51627.png)  
   
-Si vous voyez un encart rouge vous disant que *le service docker* n'est pas actif, c'est que le système n'a pas fini de s'initialiser. Merci de patienter et rafraichir la page jusqu'à ce qu'il disparaisse. Si il reste, merci de consulter la FAQ en bas de la documentation.  
+Si vous voyez un encart rouge vous disant que *le service docker* n'est pas actif, c'est que le système n'a pas fini de s'initialiser. Merci de patienter et rafraichir la page jusqu'à ce qu'il disparaisse. Si il reste, pensez à **redémarrer votre machine**! Sinon merci de consulter la FAQ en bas de la documentation.  
   
 Concernant les paramètres généraux, il n'y a en principe pas besoin de modifier les 3 premières informations.  
 C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou que vous avez besoin de modifier le cycle de dialogue entre jeedom et le démon nodejs.  
