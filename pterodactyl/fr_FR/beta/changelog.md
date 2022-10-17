@@ -5,10 +5,9 @@
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
   
 
-#17/10/2022 - BETA  
+# 17/10/2022 - BETA  
   
 - Suppression de l'ancien système de récupération du nombre de joueurs pour minecraft. Utilisation d'un système complet via le package npm _"gamedig"_ permettant d'avoir directement accès 26 jeux compatibles en commun pterodactyl / gamedig (avec possibilité d'avoir plus de jeux encore)  
-  
   
 # 29/08/2022 - CETTE VERSION PASSE EN STABLE  
   
