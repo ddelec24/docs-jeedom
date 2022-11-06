@@ -66,8 +66,10 @@ Choisissez les paramètres classiques de catégorisation, affichage et objet.
 
 ![image](https://user-images.githubusercontent.com/3704897/183262692-c33e37ed-9067-4618-9e2c-4952d3cc3d5e.png)   
 
-Le choix du jeu est utile uniquement si c'est minecraft actuellement. Cela permet de récupérer le nombre de joueurs en ligne / max via une requête au site [Minecraft-Api](https://minecraft-api.com/) car Pterodactyl ne donne pas accès à ces informations directement.  
-N'hésitez pas à me faire remonter l'information sur le community jeedom si vous connaissez un site identique pour un autre jeu supporté par pterodactyl.  
+Le choix du jeu permet de récupérer le nombre de joueurs en ligne / max. Pour le cas particulier de minecraft, il y a deux possibilités:  
+- Méthode classique, votre jeedom fait la requête. Choisir "Minecraft"  
+- Méthode alternative, une demande externe est faite via une demande au site [Minecraft-Api](https://minecraft-api.com/), cela afin de passer certaines sécurité parfois présentes. Choisir "Minecraft (via API externe)"  
+Si votre jeu n'est pas listé, il n'est surement pas disponible. N'hésitez pas à me le signaler sur le community jeedom, je vous confirmerais si c'est possible ou non.  
 L'affichage de la console sur le dashboard vous donnera accès à la console temps réel comme dans pterodactyl.  
   
   
