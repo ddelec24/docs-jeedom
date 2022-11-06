@@ -7,7 +7,7 @@
 
 # 17/10/2022 - BETA  
   
-- Suppression de l'ancien système de récupération du nombre de joueurs pour minecraft. Utilisation d'un système complet via le package npm _"gamedig"_ permettant d'avoir directement accès à 26 jeux compatibles en commun pterodactyl / gamedig (avec possibilité d'avoir plus de jeux encore)  
+- Récupération des joueurs en ligne / max => Utilisation d'un système complet via le package npm _"gamedig"_ permettant d'avoir directement accès à 26 jeux compatibles en commun pterodactyl / gamedig (avec possibilité d'avoir plus de jeux encore)  
   
 # 29/08/2022 - CETTE VERSION PASSE EN STABLE  
   
