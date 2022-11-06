@@ -4,6 +4,9 @@
 >  
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
   
+# 06/11/2022 - CETTE VERSION PASSE EN STABLE
+
+- Code intouché
 
 # 17/10/2022 - BETA  
   
