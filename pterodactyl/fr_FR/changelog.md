@@ -4,6 +4,10 @@
 >  
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 
+# 06/11/2022 - V2.1  
+  
+- Intégration d'un script tiers (gamedig) permettant de récupérer les joueurs en ligne / max pour plus de 20 jeux compatible pterodactyl.  
+  
 # 29/08/2022 - V2.0  
   
 - Passage en mode Multi-Instance. Le paramétrage de votre pterodactyl n'est plus global, il est maintenant dans un équipement. Vous pouvez donc connecter plusieurs instances Pterodactyl.  
