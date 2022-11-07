@@ -19,8 +19,26 @@ Voici une liste non exhaustive de marques ayant parfois des contrôleurs électr
 
 ## Aperçu  
 
+# Dépendances  
 
-# Configuration générale
+La première étape est d'installer les dépendances. Le plugin se sert de plugin officiel jeedom _Docker Management (docker2)_.  
+![image](https://user-images.githubusercontent.com/3704897/200282392-7bdcd23b-a6ed-4113-81b3-40acf88448fb.png)  
+
+# Configuration générale  
+
+Une fois les dépendances installées, il faut saisir les identifiants de l'application Midea que vous utilisez.  
+Le port n'est à changer que si vous utilisez déjà ce dernier.  
+  
+Sauvegardez puis appuyez sur "**Activation Docker**".  
+L'action peut-être assez longue suivant votre machine (environ 5-10min sur un raspberry 3B+, un peu moins si elle est plus puissante) car cela créé une image spécialement préparée pour être compatible avec votre système.  
+
+Une fois que la première pastille docker est verte, vous pouvez appuyer sur le second bouton "**Démarrage du container Midea**"  
+
+![image](https://user-images.githubusercontent.com/3704897/200291627-985b687d-b5ac-4335-b86d-f6cd4eef3c6f.png)  
+
+C'est en principe plus rapide, moins d'une minute.  
+
+Voilà le plugin est configuré pour communiquer avec l'univers PAC/clim/déshumidificateur de Midea!  
 
 # Configuration d'un équipement
 
