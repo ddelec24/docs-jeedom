@@ -70,6 +70,9 @@ Vous pouvez trouver le code github original ici:  [nbogojevic/midea-beautiful-ai
   
 ## Aide - FAQ  
   
+# La température est incorrecte  
+Dans votre application aussi. Sur beaucoup de modèles les capteurs sont mal placés dans les unités.  
+  
 ## Problèmes connus
 
 
