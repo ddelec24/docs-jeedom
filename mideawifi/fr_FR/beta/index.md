@@ -60,7 +60,7 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
   
   ![image](https://user-images.githubusercontent.com/3704897/202680751-883a360b-d988-4ed8-b846-cd2e35e4330b.png)  
 
-  Niveau scénario, vous avez possibilité de mettre une température au 1/2 °C prêt. (alors que via le dashboard c'est au °C)  
+  Niveau scénario, vous avez possibilité de mettre une température au 1/2 °C près. (alors que via le dashboard c'est au °C)  
   Note pour la vitesse de ventilation: 102 est la valeur pour que la ventilation soit automatique, sinon c'est entre 20 et 80. Le pas sera de 20 (pour respecter les paliers classiques: silencieux normal rapide etc...)  
   
 # Scripts Tiers  
