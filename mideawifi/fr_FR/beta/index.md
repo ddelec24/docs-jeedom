@@ -1,7 +1,6 @@
 
 # Plugin Mideawifi - BETA
 
-WIP
 
 ![mideawifi_icon](https://user-images.githubusercontent.com/3704897/200172116-ac8de823-46a5-4ae3-9165-fbb591c640f7.png)
 
@@ -22,7 +21,7 @@ Voici une liste non exhaustive de marques ayant parfois des contrôleurs électr
 
 ## Aperçu  
   
-![image](https://user-images.githubusercontent.com/3704897/201055335-b33b8cb5-fc1c-4239-921a-32c05e722ae5.png)  
+![image](https://user-images.githubusercontent.com/3704897/202679954-b5b8f481-eac5-4f97-9452-cbbe470074a9.png)  
   
 # Dépendances  
 
@@ -56,8 +55,14 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
 ![image](https://user-images.githubusercontent.com/3704897/201054699-05048f34-1d90-4212-9c16-ad753e70191b.png)  
   
 *Précision importante:* si vous avez les anciens contrôleurs wifi OSK-102, qui ne sont pas "cloud only" vous n'aurez ni token, ni key, laissez les champs vides.  
+  
+# Scénarios  
+  
+  ![image](https://user-images.githubusercontent.com/3704897/202680751-883a360b-d988-4ed8-b846-cd2e35e4330b.png)  
 
-
+  Niveau scénario, vous avez possibilité de mettre une température au 1/2 °C prêt. (alors que via le dashboard c'est au °C)  
+  Note pour la vitesse de ventilation: 102 est la valeur pour que la ventilation soit automatique, sinon c'est entre 20 et 80. Le pas sera de 20 (pour respecter les paliers classiques: silencieux normal rapide etc...)  
+  
 # Scripts Tiers  
   
 Mideawifi repose sur le script tiers npm **midea-beautiful-air** en version *v0.9.15*  
@@ -75,6 +80,8 @@ Dans votre application aussi. Sur beaucoup de modèles les capteurs sont mal pla
   
 ## Problèmes connus
 
+- Le cloud midea n'est pas connu pour être très robuste. Si vous faites 5 commandes en moins d'une minute, il risque de ne pas apprécier et n'en faire que la moitié!  
+- Actuellement il faut mettre les identifiants midea air / nethome plus. Il semblerait que Msmarthome ne soit pas totalement compatible.  
 
 ---------------------------------------------------------------
 Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
