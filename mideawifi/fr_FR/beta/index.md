@@ -6,7 +6,7 @@
 
 
 Mideawifi permet de contrôler et historiser les informations de climatiseurs construits par **[Midea](https://fr.wikipedia.org/wiki/Midea)** avec modules Wi-Fi. 
-Si vous utilisez l'application smartphone **Nethome plus**, c'est probablement le constructeur Midea qui est derrière le contrôleur de climatiseur.  
+Si vous utilisez l'application smartphone **Nethome plus** **Midea Air** ou **MSmartHome**, c'est probablement le constructeur Midea qui est derrière le contrôleur de climatiseur.  
 
 Voici une liste non exhaustive de marques ayant parfois des contrôleurs électroniques Midea:  
 - Altech  
