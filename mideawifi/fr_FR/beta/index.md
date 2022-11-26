@@ -21,7 +21,7 @@ Voici une liste non exhaustive de marques ayant parfois des contrôleurs électr
 
 ## Aperçu  
   
-![image](https://user-images.githubusercontent.com/3704897/202679954-b5b8f481-eac5-4f97-9452-cbbe470074a9.png)  
+![image](https://user-images.githubusercontent.com/3704897/204097207-b6488326-d70c-48b8-ab2c-57c076780517.png)  
   
 # Dépendances  
 
