@@ -75,10 +75,10 @@ Vous pouvez trouver le code github original ici:  [nbogojevic/midea-beautiful-ai
   
 ## Aide - FAQ  
   
-# La température est incorrecte  
+### La température est incorrecte  
 Dans votre application aussi. Sur beaucoup de modèles les capteurs sont mal placés dans les unités.  
   
-# Il y a un délai entre les actions sur jeedom et l'effet sur l'appareil  
+### Il y a un délai entre les actions sur jeedom et l'effet sur l'appareil  
 Effectivement, la détection peut mettre jusqu'à 20-30secondes, la récupération d'informations et les envois entre 5 et 15secondes. Tout dépend de la rapidité de réponse du cloud.  
 
 ## Problèmes connus
