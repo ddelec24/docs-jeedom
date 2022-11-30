@@ -63,6 +63,69 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
   Niveau scénario, vous avez possibilité de mettre une température au 1/2 °C près. (alors que via le dashboard c'est au °C)  
   Note pour la vitesse de ventilation: 102 est la valeur pour que la ventilation soit automatique, sinon c'est entre 20 et 80. Le pas sera de 20 (pour respecter les paliers classiques: silencieux normal rapide etc...)  
   
+  Notez que l'on peut passer une série de commandes en bloc code (cela évite d'avoir un bug du cloud quand on envoi trop d'ordres d'un coup)  
+  La commande action se nomme "*Commandes personnalisées*". Voici commment procéder:  
+  
+  ```php
+  // mettez l'équipement qui vous correspond
+  $equipement = "#[test][Clim Salon][Commandes personnalisées]#";
+  // voir doc en dessous pour la liste des possibilités
+  $mesCommandes = "--running 1 --fan-speed 60";
+  
+  // laissez comme ça
+  $sendCmd = cmd::byString($equipement);
+  $sendCmd->execute(array('text' => $mesCommandes));
+  ```
+  
+  Voici la liste de toutes les commandes possibles:  
+  ```markdown
+  --beep-prompt BEEP_PROMPT
+                        turn beep prompt on/off (dehumidifier, air conditioner)
+  --fan-speed FAN_SPEED
+                        Current fan speed (dehumidifier, air conditioner)
+  --ion-mode ION_MODE   ion (anion) mode on/off (dehumidifier)
+  --mode MODE           operating mode (dehumidifier, air conditioner)
+  --pump PUMP           water pump on/off (dehumidifier)
+  --pump-switch-flag PUMP_SWITCH_FLAG
+                        Pump switch flag - Disables pump (dehumidifier)
+  --running RUNNING     turn on/off (dehumidifier, air conditioner)
+  --sleep-mode SLEEP_MODE
+                        sleep mode on/off (dehumidifier)
+  --target-humidity TARGET_HUMIDITY
+                        Target humidity (dehumidifier)
+  --vertical-swing VERTICAL_SWING
+                        vertical swing mode on/off (dehumidifier, air conditioner)
+  --comfort-sleep COMFORT_SLEEP
+                        sleep comfort mode on/off (air conditioner)
+  --dryer DRYER         dryer mode on/off (air conditioner)
+  --eco-mode ECO_MODE   eco mode on/off (air conditioner)
+  --fahrenheit FAHRENHEIT
+                        use Fahrenheit degrees on/off (air conditioner)
+  --horizontal-swing HORIZONTAL_SWING
+                        fan left/right swing on/off (air conditioner)
+  --purifier PURIFIER   dryer mode on/off (air conditioner)
+  --show-screen SHOW_SCREEN
+                        display on/off (air conditioner)
+  --target-temperature TARGET_TEMPERATURE
+                        A/C target temperature (air conditioner)
+  --turbo TURBO         turbo (boost) mode on/off (air conditioner)
+  --turbo-fan TURBO_FAN
+                        turbo fan mode on/off (air conditioner)
+  ```  
+  - Lorsque vous voyez on/off, il faut mettre respectivement 1 ou 0.  
+  - Pour le cas particulier du FAN_SPEED, il faut être entre 20 et 80 (certains modèles acceptent 100) et il faut utiliser **102** si vous voulez mettre la ventilation en automatique.  
+  - La température de consigne TARGET_TEMPERATURE peut-être de type entier 20 ou plus précis comme 20.5 avec un point pour séparer les décimales (pas la virgule) et évitez les dixièmes de degrés, restez sur du demi degré.  
+  - Le mode est un chiffre à mettre, pour les clims c'est:  
+    - auto = 1  
+    - cool = 2  
+    - dry = 3  
+    - heat = 4  
+    - fan_only = 5  
+  - Pour les déshumidificateurs c'est:  
+    - *TODO - en test pour savoir à quoi ça correspond*
+
+A vous de faire attention avec les possiblités, fiez-vous à l'appli pour ne choisir que des commandes acceptées par votre appareil.  
+  
 # Scripts Tiers  
   
 Mideawifi repose sur le script tiers npm **midea-beautiful-air** en version *v0.9.15*  
