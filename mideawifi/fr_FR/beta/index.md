@@ -138,7 +138,7 @@ Vous pouvez trouver le code github original ici:  [nbogojevic/midea-beautiful-ai
 # Informations complémentaires  
   
  - Le plugin n'a pas été testé avec tous les climatiseurs et avec toutes les configurations logicielles et réseaux.  
- Merci de faire un Issue sur [GitHub](https://github.com/ddelec24/mideawifi/issues) ou un message sur le forum [Community Jeedom](https://community.jeedom.com/) si jamais vous constatez un dysfonctionnement.  
+ Merci de faire un Issue sur [GitHub](https://github.com/ddelec24/mideawifi/issues) ou un message sur le forum [Community Jeedom](https://community.jeedom.com/tag/plugin-mideawifi) si jamais vous constatez un dysfonctionnement.  
   
 ## Aide - FAQ  
   
