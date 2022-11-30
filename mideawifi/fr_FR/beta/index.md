@@ -122,7 +122,11 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
     - heat = 4  
     - fan_only = 5  
   - Pour les déshumidificateurs c'est:  
-    - *TODO - en test pour savoir à quoi ça correspond*
+    - target = 1
+    - continu = 2
+    - smart = 3
+    - dryer = 4
+    - *TODO - à vérifier auprès des testeurs*
 
 A vous de faire attention avec les possiblités, fiez-vous à l'appli pour ne choisir que des commandes acceptées par votre appareil.  
   
