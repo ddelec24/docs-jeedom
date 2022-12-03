@@ -1,5 +1,10 @@
 
-# CHANGELOG
+# CHANGELOG BETA
+
+## 03/12/2022 - Ajout Déshumidificateur  
+- Ajout des fonctions de base pour déshumidificateur (merci Ludi)  
+- Ajout de la possibilité d'activer ou désactiver l'affichage sur les clims (non visible par défaut - demande de TortueGeniale)  
+- switch entre °C et °F caché par défaut
 
 ## 30/11/2022 - Mise en beta de la refonte du plugin 
 - /!\ Rappel: si vous avez déjà le plugin mideawifi en beta avant cette date, il faut supprimer les équipements, faire la mise à jour et suivre la documentation comme un nouveau plugin!  
