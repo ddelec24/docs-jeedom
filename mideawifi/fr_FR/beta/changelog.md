@@ -3,7 +3,7 @@
 
 ## 03/12/2022 - Ajout Déshumidificateur  
 - Ajout des fonctions de base pour déshumidificateur (merci Ludi)  
-- Ajout de la possibilité d'activer ou désactiver l'affichage sur les clims (non visible par défaut - demande de TortueGeniale)  
+- Ajout de la possibilité d'activer ou désactiver l'affichage sur les clims (non visible par défaut - demande de Fifi.h)  
 - switch entre °C et °F caché par défaut
 
 ## 30/11/2022 - Mise en beta de la refonte du plugin 
