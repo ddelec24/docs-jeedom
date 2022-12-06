@@ -133,7 +133,7 @@ A vous de faire attention avec les possiblités, fiez-vous à l'appli pour ne ch
 
 Voici un exemple de code réalisé par JulienB80, utilisateur et collaborateur au développement du plugin:  
 
-<details>
+<details markdown='1'>
 <summary>Cliquez pour voir le code pour le scénario hiver</summary>
 
 ```php
