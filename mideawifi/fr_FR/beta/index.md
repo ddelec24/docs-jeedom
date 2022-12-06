@@ -132,7 +132,8 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
 A vous de faire attention avec les possiblités, fiez-vous à l'appli pour ne choisir que des commandes acceptées par votre appareil.  
 
 Voici un second exemple de code à mettre dans un scénario sans déclencheur, qui sera appelé par "Action de chauffe" dans le plugin Thermostat.  
-![image](https://user-images.githubusercontent.com/3704897/205889995-19e53068-e79b-407e-be88-762f0d8666be.png)  
+
+![image](https://user-images.githubusercontent.com/3704897/205890404-5a87ac42-26e2-4cfc-ac69-5b786416a9c4.png)  
   
 Réalisé par JulienB80, utilisateur et collaborateur au développement du plugin:  
 
