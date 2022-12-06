@@ -210,8 +210,8 @@ if ($statePower > 75) {
     if ($temperature > 30)  {
           $temperature = 30;
     }
-    $cmdPac->execute(array('text'=> '--mode 4 --turbo 1 --running 1 --fan-speed 60 --target-temperature '.$temperature));
-      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 60 + target-temperature ".$temperature.'°C + Turbo');
+    $cmdPac->execute(array('text'=> '--mode 4 --turbo 1 --running 1 --fan-speed 80 --target-temperature '.$temperature));
+      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 80 + target-temperature ".$temperature.'°C + Turbo');
 }
 ```
 </details>
