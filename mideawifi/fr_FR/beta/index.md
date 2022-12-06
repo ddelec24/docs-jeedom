@@ -131,7 +131,8 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
 
 A vous de faire attention avec les possiblités, fiez-vous à l'appli pour ne choisir que des commandes acceptées par votre appareil.  
 
-Voici un exemple de code réalisé par JulienB80, utilisateur et collaborateur au développement du plugin:  
+Voici un second exemple de code à mettre dans "Action de chauffe" dans le plugin Thermostat.  
+Réalisé par JulienB80, utilisateur et collaborateur au développement du plugin:  
 
 <details markdown='1'>
 <summary>Cliquez pour voir le code pour le scénario hiver</summary>
@@ -163,55 +164,55 @@ $scenario->setLog("Début d'exécution Bloc Code : Consigne : ".$stateConsigne."
 // Si thermostat coupé, on coupe aussi la PAC
 if ($statePower == 0) {
     $cmdPac->execute(array('text'=> '--running 0'));
-      $scenario->setLog("Puissance Demandée : ".$statePower." % donc extinction PAC");
+    $scenario->setLog("Puissance Demandée : ".$statePower." % donc extinction PAC");
 }
 
 // Si peu de puissance demandée,
 // on met une vitesse de ventilation faible
 // petite correction sur température demandée
 if (($statePower > 0) AND ($statePower <= 25))  {
-      $temperature = $stateConsigne + 3;
+    $temperature = $stateConsigne + 3;
     if ($temperature > 30)  {
           $temperature = 30;
     }
     $cmdPac->execute(array('text'=> '--mode 4 --turbo 0 --running 1 --fan-speed 40 --target-temperature '.$temperature));
-      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 40 + target-temperature ".$temperature.'°C');
+    $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 40 + target-temperature ".$temperature.'°C');
 }
 
 // Si un peu plus de puissance demandée,
 // on met une vitesse de ventilation normale
 // moyenne correction sur température demandée
 if (($statePower > 25) AND ($statePower <= 50))  {
-      $temperature = $stateConsigne + 4;
+    $temperature = $stateConsigne + 4;
     if ($temperature > 30)  {
           $temperature = 30;
     }
     $cmdPac->execute(array('text'=> '--mode 4 --turbo 0 --running 1 --fan-speed 60 --target-temperature '.$temperature));
-      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 60 + target-temperature ".$temperature.'°C');
+    $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 60 + target-temperature ".$temperature.'°C');
 }
 
 // Si puissance demandée assez importante,
 // on met une vitesse de ventilation forte
 // moyenne correction sur température demandée
 if (($statePower > 50) AND ($statePower <= 75))  {
-      $temperature = $stateConsigne + 5;
+    $temperature = $stateConsigne + 5;
     if ($temperature > 30)  {
           $temperature = 30;
     }
     $cmdPac->execute(array('text'=> '--mode 4 --turbo 0 --running 1 --fan-speed 80 --target-temperature '.$temperature));
-      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 80 + target-temperature ".$temperature.'°C');
+    $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 80 + target-temperature ".$temperature.'°C');
 }
 
 // Si puissance demandée très importante,
 // on met le mode turbo
 // forte correction sur température demandée
 if ($statePower > 75) {
-      $temperature = $stateConsigne + 6;
+    $temperature = $stateConsigne + 6;
     if ($temperature > 30)  {
           $temperature = 30;
     }
     $cmdPac->execute(array('text'=> '--mode 4 --turbo 1 --running 1 --fan-speed 80 --target-temperature '.$temperature));
-      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 80 + target-temperature ".$temperature.'°C + Turbo');
+    $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 80 + target-temperature ".$temperature.'°C + Turbo');
 }
 ```
 </details>
