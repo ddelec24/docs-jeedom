@@ -60,7 +60,7 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
   
   ![image](https://user-images.githubusercontent.com/3704897/202680751-883a360b-d988-4ed8-b846-cd2e35e4330b.png)  
 
-  Niveau scénario, vous avez possibilité de mettre une température au 1/2 °C près. (alors que via le dashboard c'est au °C)  
+  Niveau scénario, vous avez possibilité de mettre une température au ½ °C près. (alors que via le dashboard c'est au °C)  
   Note pour la vitesse de ventilation: 102 est la valeur pour que la ventilation soit automatique, sinon c'est entre 20 et 80. Le pas sera de 20 (pour respecter les paliers classiques: silencieux normal rapide etc...)  
   
   Notez que l'on peut passer une série de commandes en bloc code (cela évite d'avoir un bug du cloud quand on envoi trop d'ordres d'un coup)  
@@ -112,6 +112,7 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
   --turbo-fan TURBO_FAN
                         turbo fan mode on/off (air conditioner)
   ```  
+  
   - Lorsque vous voyez on/off, il faut mettre respectivement 1 ou 0.  
   - Pour le cas particulier du FAN_SPEED, il faut être entre 20 et 80 (certains modèles acceptent 100) et il faut utiliser **102** si vous voulez mettre la ventilation en automatique.  
   - La température de consigne TARGET_TEMPERATURE peut-être de type entier 20 ou plus précis comme 20.5 avec un point pour séparer les décimales (pas la virgule) et évitez les dixièmes de degrés, restez sur du demi degré.  
@@ -129,6 +130,91 @@ En principe il n'y a rien à toucher à l'intérieur des équipements. (sauf le 
     - dryer = 4  
 
 A vous de faire attention avec les possiblités, fiez-vous à l'appli pour ne choisir que des commandes acceptées par votre appareil.  
+
+Voici un exemple de code réalisé par JulienB80, utilisateur et collaborateur au développement du plugin:  
+
+<details>
+<summary>Cliquez pour voir le code pour le scénario hiver</summary>
+
+```php
+// Par JulienB80 - 12/2022
+// Les sondes midea étant peu fiables, tout se base sur un thermostat annexe géré par le plugin thermostat
+// De plus, cela évite les commandes à répétition car tout est envoyé d'un coup.
+// Pas de problème de cloud de cette manière.
+
+// #########################################################################################
+// ne changez que les éléments dans cet encart
+  
+//récupération de la puissance du thermostat
+$cmdPower = cmd::byString("#[ChauffageClimatisation][Thermostat toto][Puissance]#");
+$statePower = $cmdPower->execCmd();
+
+//récupération de la consigne demandée à ce thermostat
+$cmdConsigne = cmd::byString("#[ChauffageClimatisation][Thermostat toto][Consigne]#");
+$stateConsigne = $cmdConsigne->execCmd();
+
+// La commande citée plus haut pour envoyer les commandes personnalisées à votre appareil midea
+$cmdPac = cmd::byString("#[ChauffageClimatisation][PAC toto][Commandes personnalisées]#");
+
+// #########################################################################################
+
+$scenario->setLog("Début d'exécution Bloc Code : Consigne : ".$stateConsigne."°C // Puissance :".$statePower."%");
+
+// Si thermostat coupé, on coupe aussi la PAC
+if ($statePower == 0) {
+    $cmdPac->execute(array('text'=> '--running 0'));
+      $scenario->setLog("Puissance Demandée : ".$statePower." % donc extinction PAC");
+}
+
+// Si peu de puissance demandée,
+// on met une vitesse de ventilation faible
+// petite correction sur température demandée
+if (($statePower > 0) AND ($statePower <= 25))  {
+      $temperature = $stateConsigne + 3;
+    if ($temperature > 30)  {
+          $temperature = 30;
+    }
+    $cmdPac->execute(array('text'=> '--mode 4 --turbo 0 --running 1 --fan-speed 40 --target-temperature '.$temperature));
+      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 40 + target-temperature ".$temperature.'°C');
+}
+
+// Si un peu plus de puissance demandée,
+// on met une vitesse de ventilation normale
+// moyenne correction sur température demandée
+if (($statePower > 25) AND ($statePower <= 50))  {
+      $temperature = $stateConsigne + 4;
+    if ($temperature > 30)  {
+          $temperature = 30;
+    }
+    $cmdPac->execute(array('text'=> '--mode 4 --turbo 0 --running 1 --fan-speed 60 --target-temperature '.$temperature));
+      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 60 + target-temperature ".$temperature.'°C');
+}
+
+// Si puissance demandée assez importante,
+// on met une vitesse de ventilation forte
+// moyenne correction sur température demandée
+if (($statePower > 50) AND ($statePower <= 75))  {
+      $temperature = $stateConsigne + 5;
+    if ($temperature > 30)  {
+          $temperature = 30;
+    }
+    $cmdPac->execute(array('text'=> '--mode 4 --turbo 0 --running 1 --fan-speed 80 --target-temperature '.$temperature));
+      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 80 + target-temperature ".$temperature.'°C');
+}
+
+// Si puissance demandée très importante,
+// on met le mode turbo
+// forte correction sur température demandée
+if ($statePower > 75) {
+      $temperature = $stateConsigne + 6;
+    if ($temperature > 30)  {
+          $temperature = 30;
+    }
+    $cmdPac->execute(array('text'=> '--mode 4 --turbo 1 --running 1 --fan-speed 60 --target-temperature '.$temperature));
+      $scenario->setLog("Puissance Demandée : ".$statePower." % donc fan-speed = 60 + target-temperature ".$temperature.'°C + Turbo');
+}
+```
+</details>
   
 # Scripts Tiers  
   
