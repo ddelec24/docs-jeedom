@@ -138,6 +138,9 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
 ## Problèmes connus
 
 - Le nom des pièces jointes n'est pas personnalisable. Lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
-
+  
+- J'ai supprimé un groupe mais il est encore présent lorsque je synchronise, pourquoi?  
+  Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!
+  
     ---------------------------------------------------------------
 Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
