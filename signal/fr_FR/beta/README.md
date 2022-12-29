@@ -80,6 +80,13 @@ Le démon devrait se relancer automatiquement.
 
 La tuile est toute simple car on est sur un plugin qui a surtout une utilité d'intéractions. On peut envoyer et recevoir un message (destinataire = expéditeur = numéro de l'équipement).  
 
+## Envoi à des groupes  
+
+Lorsque tout est fonctionnel et que vous revenez dans un de vos équipements/comptes signal, vous verrez la possiblité de synchroniser vos groupes.  
+Cliquez simplement sur les flêches en cercle et ils apparaîtront.  
+  
+![image](https://user-images.githubusercontent.com/3704897/209935747-ce854520-4752-4301-b5a5-63cdf6ed4828.png)  
+  
 ## Utilisation en scénarios
 
 Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voici quelques exemples simples:  
@@ -87,6 +94,8 @@ Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voi
 ![image](https://user-images.githubusercontent.com/3704897/185191241-bd9b8230-702c-431f-ab74-66cd14ffbb2e.png) 
 
 Sélectionnez la commande action qui va envoyer le message (et donc le numéro qui sera utilisé en tant qu'expéditeur), mettez votre message et le numéro qui doit recevoir le message (Attention il doit aussi exister dans le plugin et être actif!).  
+Vous pouvez aussi l'envoyer à un groupe, voir section précédente pour synchroniser.  
+![image](https://user-images.githubusercontent.com/3704897/209936117-09be78b8-88db-4b38-ab26-2a028c30399a.png)  
   
 Dans le cadre d'une pièce-jointe. vous pouvez utiliser une variable, un tag, une commande, peut importe. La valeur doit être soit un **lien internet**, soit un **chemin local** (exemple: */home/jeedom/ma_video.mp4*)  
 Dans ma capture ci-dessus, je recevrais un screenshot de ma caméra.  
