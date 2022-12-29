@@ -1,6 +1,7 @@
 
-# CHANGELOG MIDEAWIFI - STABLE
-  
+# CHANGELOG MIDEAWIFI - STABLE  
+### Si vous voulez voir le changelog beta, [c'est ici](https://ddelec24.github.io/docs-jeedom/mideawifi/fr_FR/beta/changelog)  
+
 ## 29/12/2022 - Passage en stable de la refonte du plugin  
 Si vous aviez l'ancienne version stable, il faudra supprimer vos équipements et suivre la nouvelle marche à suivre. Pensez à mettre à jours vos scénarios.
 Si vous êtes nouveau avec le plugin ou que vous aviez le plugin en version beta, suivez juste la mise en route habituelle (dépendances etc)  
