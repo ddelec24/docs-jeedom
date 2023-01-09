@@ -1,6 +1,10 @@
 
 # CHANGELOG BETA
-
+  
+## 09/01/2023 - Possibilités de cron  
+- Depuis la page de configuration, on a maintenant le choix entre 3 cron, 1 minute, 5 minutes ou 10 minutes pour la récupération des informations.  
+Fonctionnalité en test, à voir si les testeurs qui mettent 1 minute ont des soucis de remontés d'informations ou non.  
+  
 ## 03/12/2022 - Ajout Déshumidificateur  
 - Ajout des fonctions de base pour déshumidificateur (merci Ludi)  
 - Ajout de la possibilité d'activer ou désactiver l'affichage sur les clims (non visible par défaut - demande de Fifi.h)  
