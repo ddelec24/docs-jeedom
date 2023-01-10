@@ -1,6 +1,11 @@
 
 # CHANGELOG BETA
   
+## 10/01/2023 - Work in Progress - Tentative d'implémentation MsmartHome  
+- Les équipements qui sont appairés avec l'application MsmartHome n'arrivent pas à communiquer correctement.  
+Première beta sur cette fonctionnalité: Possibilité de cocher MsmartHome dans la configuration générale du plugin.  
+Seul le discover est accessible avec cette fonctionnalité. Merci de me faire un retour des logs en debug si vous êtes dans l'obligation d'utiliser cette application.  
+  
 ## 09/01/2023 - Possibilités de cron  
 - Depuis la page de configuration, on a maintenant le choix entre 3 cron, 1 minute, 5 minutes ou 10 minutes pour la récupération des informations.  
 Fonctionnalité en test, à voir si les testeurs qui mettent 1 minute ont des soucis de remontés d'informations ou non.  
