@@ -31,7 +31,7 @@ La première étape est d'installer les dépendances. Le plugin mideawifi utilis
 # Configuration générale  
 
 Une fois les dépendances installées, il faut saisir les identifiants de l'application Midea que vous utilisez.  
-**[Expérimental]** Si vous êtes dans l'obligation d'utiliser l'application MsmartHome, cochez cette case pour voir si la découverte des appareils fonctionne (et me contacter si besoin)  
+**[Expérimental]** Si vous êtes dans l'obligation d'utiliser l'application MsmartHome, cochez la case correspondante pour voir si la découverte des appareils fonctionne (et me contacter si besoin)  
 Choisissez la fréquence de récupération des informations sur vos appareils. (5 minutes par défaut)  
 Le port n'est à changer que si vous utilisez déjà ce dernier.  
   
