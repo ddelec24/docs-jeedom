@@ -31,15 +31,17 @@ La première étape est d'installer les dépendances. Le plugin mideawifi utilis
 # Configuration générale  
 
 Une fois les dépendances installées, il faut saisir les identifiants de l'application Midea que vous utilisez.  
+**[Expérimental]** Si vous êtes dans l'obligation d'utiliser l'application MsmartHome, cochez cette case pour voir si la découverte des appareils fonctionne (et me contacter si besoin)  
+Choisissez la fréquence de récupération des informations sur vos appareils. (5 minutes par défaut)  
 Le port n'est à changer que si vous utilisez déjà ce dernier.  
   
 Sauvegardez puis appuyez sur "**Activation Docker**".  
 L'action peut-être assez longue la première fois, dépendant de la puissance de votre machine (environ 5-10min sur un raspberry 3B+, sinon moins) car cela créé une image spécialement préparée pour être compatible avec votre système.  
 
 Une fois que la première pastille docker est verte, vous pouvez appuyer sur le second bouton "**Démarrage du container Midea**"  
-
-![image](https://user-images.githubusercontent.com/3704897/200291627-985b687d-b5ac-4335-b86d-f6cd4eef3c6f.png)  
-
+  
+![image](https://user-images.githubusercontent.com/3704897/211515013-eb1ddbb5-6a4f-4497-a2cd-cee47a38725e.png)  
+  
 C'est en principe plus rapide, moins d'une minute.  
 
 Voilà le plugin est configuré pour communiquer avec l'univers PAC/clim/déshumidificateur de Midea!  
