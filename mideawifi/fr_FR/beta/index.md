@@ -23,6 +23,9 @@ Voici une liste non exhaustive de marques ayant parfois des contrôleurs électr
   
 ![image](https://user-images.githubusercontent.com/3704897/204097207-b6488326-d70c-48b8-ab2c-57c076780517.png)  
   
+# Point d'attention  
+/!\ Vos appareils (splits, déshumidificateurs) ont une adresse IP, qui sert à communiquer sur le réseau. Il faut fixer l'adresse IP sur votre routeur en mettant un bail permanent. Si vous avez besoin d'aide sur le sujet, n'hésitez pas à chercher sur le forum.  
+
 # Dépendances  
 
 La première étape est d'installer les dépendances. Le plugin mideawifi utilise un autre plugin, _Docker Management (docker2)_ qui est maintenu par Jeedom directement.  
