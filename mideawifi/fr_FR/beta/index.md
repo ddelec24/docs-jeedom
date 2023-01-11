@@ -239,7 +239,10 @@ Dans votre application aussi. Sur beaucoup de modèles les capteurs sont mal pla
   
 ### Il y a un délai entre les actions sur jeedom et l'effet sur l'appareil  
 Effectivement, la détection peut mettre jusqu'à 20-30secondes, la récupération d'informations et les envois entre 5 et 15secondes. Tout dépend de la rapidité de réponse du cloud.  
-
+  
+### Depuis un redémarrage de jeedom ou de mon routeur, ça ne fonctionne plus.  
+Il est fortement conseillé de fixer les adresses ip de vos équipements. C'est la première chose à vérifier.
+  
 ## Problèmes connus
 
 - Le cloud midea n'est pas connu pour être très robuste. Si vous faites 5 commandes en moins d'une minute, il risque de ne pas apprécier et n'en faire que la moitié!  
