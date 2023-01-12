@@ -17,7 +17,7 @@ La première fois, il vous faudra votre ou vos smartphones pour une autorisation
   
 ## Configuration
 
-### Configuration générale
+### Configuration du plugin
 
 Il faut commencer par installer les dépendances.  
 
@@ -25,7 +25,7 @@ Il faut commencer par installer les dépendances.
   
 Si vous voyez un encart rouge vous disant que *le service docker* n'est pas actif, c'est que le système n'a pas fini de s'initialiser. Merci de patienter et rafraichir la page jusqu'à ce qu'il disparaisse. Si il reste, pensez à **redémarrer votre machine**! Sinon merci de consulter la FAQ en bas de la documentation.  
   
-Concernant les paramètres généraux, il n'y a en principe pas besoin de modifier les 3 premières informations.  
+Concernant les paramètres généraux du plugin, il n'y a en principe pas besoin de modifier les 3 premières informations.  
 C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou que vous avez besoin de modifier le cycle de dialogue entre jeedom et le démon nodejs.  
 **Au premier lancement** ou en cas de pastille rouge dans l'état du service API, cliquez sur  le bouton  
 ![image](https://user-images.githubusercontent.com/3704897/185181517-adb1a2e1-f720-4847-8409-b5b5908af0ca.png)  
@@ -33,7 +33,7 @@ C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou q
   
 ## Configuration des équipements
   
-Maintenant que vous avez activé le service et qu'il est opérationnel dans la configuration générale, il vous faut créer un nouvel équipement via "*Ajouter un numéro*" et associer votre appareil.  
+Maintenant que vous avez activé le service et qu'il est opérationnel dans la configuration du plugin, il vous faut créer un nouvel équipement via "*Ajouter un numéro*" et associer votre appareil.  
 
 ![image](https://user-images.githubusercontent.com/3704897/189481045-8e24d32a-bad5-491a-9d22-42374ee1823e.png)  
 
@@ -65,9 +65,9 @@ Les messages reçus sont historisés 3 mois par défaut. Vous pouvez changer dan
 ## Activation de la réception
 
 Comme on fait les choses dans l'ordre, on ne peut activer la réception dans jeedom qu'une fois qu'un numéro est associé.  
-En revenant voir dans la configuration générale on aura une option permettant d'avoir cette fonctionnalité:  
+En revenant voir dans la configuration du plugin on aura une option permettant d'avoir cette fonctionnalité:  
   
-![image](https://user-images.githubusercontent.com/3704897/185187801-8257f752-2815-4fc9-bff2-c511f52511a9.png)  
+![image](https://user-images.githubusercontent.com/3704897/212065444-eafafa7d-b5fd-4aa6-9f67-49a2ab33b135.png)  
 
 Après avoir coché la case, vous pourrez choisir le numéro à mettre en écoute dans jeedom pour les intéractions.  
 Vous devez **sauvegarder** la configuration bien entendu, mais vous devez aussi cliquer de nouveau sur le bouton **Installation/Réinstallation du service** même si celui-ci était déjà installé et que vous aviez la pastille verte.  
