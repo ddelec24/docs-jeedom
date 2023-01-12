@@ -143,4 +143,4 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
   Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!
   
     ---------------------------------------------------------------
-Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
+Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com/tag/plugin-signal)
