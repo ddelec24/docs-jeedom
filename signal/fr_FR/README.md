@@ -17,7 +17,7 @@ La première fois, il vous faudra votre ou vos smartphones pour une autorisation
   
 ## Configuration
 
-### Configuration générale
+### Configuration du plugin
 
 Il faut commencer par installer les dépendances.  
 
@@ -25,7 +25,7 @@ Il faut commencer par installer les dépendances.
   
 Si vous voyez un encart rouge vous disant que *le service docker* n'est pas actif, c'est que le système n'a pas fini de s'initialiser. Merci de patienter et rafraichir la page jusqu'à ce qu'il disparaisse. Si il reste, pensez à **redémarrer votre machine**! Sinon merci de consulter la FAQ en bas de la documentation.  
   
-Concernant les paramètres généraux, il n'y a en principe pas besoin de modifier les 3 premières informations.  
+Concernant les paramètres généraux du plugin, il n'y a en principe pas besoin de modifier les 3 premières informations.  
 C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou que vous avez besoin de modifier le cycle de dialogue entre jeedom et le démon nodejs.  
 **Au premier lancement** ou en cas de pastille rouge dans l'état du service API, cliquez sur  le bouton  
 ![image](https://user-images.githubusercontent.com/3704897/185181517-adb1a2e1-f720-4847-8409-b5b5908af0ca.png)  
@@ -33,7 +33,7 @@ C'est seulement si vous avez déjà un service qui utilise ces mêmes ports ou q
   
 ## Configuration des équipements
   
-Maintenant que vous avez activé le service et qu'il est opérationnel dans la configuration générale, il vous faut créer un nouvel équipement via "*Ajouter un numéro*" et associer votre appareil.  
+Maintenant que vous avez activé le service et qu'il est opérationnel dans la configuration du plugin, il vous faut créer un nouvel équipement via "*Ajouter un numéro*" et associer votre appareil.  
 
 ![image](https://user-images.githubusercontent.com/3704897/189481045-8e24d32a-bad5-491a-9d22-42374ee1823e.png)  
 
@@ -65,9 +65,9 @@ Les messages reçus sont historisés 3 mois par défaut. Vous pouvez changer dan
 ## Activation de la réception
 
 Comme on fait les choses dans l'ordre, on ne peut activer la réception dans jeedom qu'une fois qu'un numéro est associé.  
-En revenant voir dans la configuration générale on aura une option permettant d'avoir cette fonctionnalité:  
+En revenant voir dans la configuration du plugin on aura une option permettant d'avoir cette fonctionnalité:  
   
-![image](https://user-images.githubusercontent.com/3704897/185187801-8257f752-2815-4fc9-bff2-c511f52511a9.png)  
+![image](https://user-images.githubusercontent.com/3704897/212065444-eafafa7d-b5fd-4aa6-9f67-49a2ab33b135.png)  
 
 Après avoir coché la case, vous pourrez choisir le numéro à mettre en écoute dans jeedom pour les intéractions.  
 Vous devez **sauvegarder** la configuration bien entendu, mais vous devez aussi cliquer de nouveau sur le bouton **Installation/Réinstallation du service** même si celui-ci était déjà installé et que vous aviez la pastille verte.  
@@ -80,6 +80,13 @@ Le démon devrait se relancer automatiquement.
 
 La tuile est toute simple car on est sur un plugin qui a surtout une utilité d'intéractions. On peut envoyer et recevoir un message (destinataire = expéditeur = numéro de l'équipement).  
 
+## Envoi à des groupes  
+
+Lorsque tout est fonctionnel et que vous revenez dans un de vos équipements/comptes signal, vous verrez la possiblité de synchroniser vos groupes.  
+Cliquez simplement sur les flêches en cercle et ils apparaîtront.  
+  
+![image](https://user-images.githubusercontent.com/3704897/209935747-ce854520-4752-4301-b5a5-63cdf6ed4828.png)  
+  
 ## Utilisation en scénarios
 
 Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voici quelques exemples simples:  
@@ -87,6 +94,8 @@ Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voi
 ![image](https://user-images.githubusercontent.com/3704897/185191241-bd9b8230-702c-431f-ab74-66cd14ffbb2e.png) 
 
 Sélectionnez la commande action qui va envoyer le message (et donc le numéro qui sera utilisé en tant qu'expéditeur), mettez votre message et le numéro qui doit recevoir le message (Attention il doit aussi exister dans le plugin et être actif!).  
+Vous pouvez aussi l'envoyer à un groupe, voir section précédente pour synchroniser.  
+![image](https://user-images.githubusercontent.com/3704897/209936117-09be78b8-88db-4b38-ab26-2a028c30399a.png)  
   
 Dans le cadre d'une pièce-jointe. vous pouvez utiliser une variable, un tag, une commande, peut importe. La valeur doit être soit un **lien internet**, soit un **chemin local** (exemple: */home/jeedom/ma_video.mp4*)  
 Dans ma capture ci-dessus, je recevrais un screenshot de ma caméra.  
@@ -129,6 +138,9 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
 ## Problèmes connus
 
 - Le nom des pièces jointes n'est pas personnalisable. Lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
-
+  
+- J'ai supprimé un groupe mais il est encore présent lorsque je synchronise, pourquoi?  
+  Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!
+  
     ---------------------------------------------------------------
-Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com)
+Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com/tag/plugin-signal)
