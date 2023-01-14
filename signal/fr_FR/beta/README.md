@@ -100,6 +100,10 @@ Vous pouvez aussi l'envoyer à un groupe, voir section précédente pour synchro
 Dans le cadre d'une pièce-jointe. vous pouvez utiliser une variable, un tag, une commande, peut importe. La valeur doit être soit un **lien internet**, soit un **chemin local** (exemple: */home/jeedom/ma_video.mp4*)  
 Dans ma capture ci-dessus, je recevrais un screenshot de ma caméra.  
   
+Une autre méthode fonctionnelle et plus facile, c'est de rajouter une action et mettre la commande "Enregistrer" du plugin caméra:  
+![image](https://user-images.githubusercontent.com/3704897/212467264-11f8b356-c86a-4407-8c06-2cd3d88fa92a.png)  
+La seule limitation de cette méthode étant qu'on ne peut pas envoyer à un groupe Signal.
+Ca doit potentiellement fonctionner avec les autres plugins qui ont une fonction d'envoi de fichiers, me remonter l'information si c'est pas le cas.
   
 En intéraction, on peut faire un système de Ask ou comme ceci:  
 ![image](https://user-images.githubusercontent.com/3704897/184937800-e43b6364-cf2b-4e0d-b34c-4b7d43de3283.png)  
