@@ -5,6 +5,9 @@
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
   
+# 14/01/2023  
+  - Possibilité d'envoi de fichiers depuis des commandes d'autres plugins (camera par exemple)  
+
 # 29/12/2022  
   - Support des groupes. Il est désormais possible d'envoyer un message à un groupe signal. Voir documentation pour la mise en place.  
 
