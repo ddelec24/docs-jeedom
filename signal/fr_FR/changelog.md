@@ -6,7 +6,10 @@
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 > Pour consulter le changelog BETA, [c'est ici](https://ddelec24.github.io/docs-jeedom/signal/fr_FR/beta/changelog)  
   
-# Version du 12/01/2022  
+# Version du 17/01/2023  
+  - Fix bug lors d'envoi de messages simples contenant un guillemet
+
+# Version du 12/01/2023  
   - Intégration des groupes. Possibilité d'envoyer à un groupe Signal dans lequel vous faites parti.  
 
 # Version du 19/12/2022  
