@@ -137,7 +137,10 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
  ```bash  
   sudo apt remove -y docker-ce docker-ce-cli containerd.io && sudo apt purge -y docker-ce containerd.io && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean  
  ```  
-  Suite à ça, vous pouvez relancer les dépendances, attendre 5 minutes que tout se mette en place, et continuer l'installation du service Api.
+ > Suite à ça, vous pouvez relancer les dépendances, attendre 5 minutes que tout se mette en place, et continuer l'installation du service Api.  
+
+- J'ai dans le fichier de log **http.error** un message disant `[MySQL] Error code : 22007 (1366). Incorrect string value...` qui arrive parfois depuis que j'ai le plugin signal.  
+ > C'est probablement que vous avez une vieille installation jeedom et que votre base de données n'est pas compatible avec les émoji. [Vous trouverez ici la résolution](https://community.jeedom.com/t/bug-sql-quand-le-message-contient-des-caracteres-speciaux/99753/27?u=ddelec24). Mais il faut bien sauvegarder tout votre jeedom et votre base de données. Si vous n'avez pas les compétences nécessaires ne tentez pas sans aide.  
   
 ## Problèmes connus
 
