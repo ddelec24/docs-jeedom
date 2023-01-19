@@ -133,14 +133,17 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
  ```bash  
   sudo apt remove -y docker-ce docker-ce-cli containerd.io && sudo apt purge -y docker-ce containerd.io && sudo apt autoremove -y && sudo apt clean && sudo apt autoclean  
  ```  
-  Suite à ça, vous pouvez relancer les dépendances, attendre 5 minutes que tout se mette en place, et continuer l'installation du service Api.
+ > Suite à ça, vous pouvez relancer les dépendances, attendre 5 minutes que tout se mette en place, et continuer l'installation du service Api.  
+
+- J'ai dans le fichier de log **http.error** un message disant `[MySQL] Error code : 22007 (1366). Incorrect string value...` qui arrive parfois depuis que j'ai le plugin signal.  
+ > C'est probablement que vous avez une vieille installation jeedom et que votre base de données n'est pas compatible avec les émoji. [Vous trouverez ici la résolution](https://community.jeedom.com/t/bug-sql-quand-le-message-contient-des-caracteres-speciaux/99753/27?u=ddelec24). Mais il faut bien sauvegarder tout votre jeedom et votre base de données. Si vous n'avez pas les compétences nécessaires ne tentez pas sans aide.  
   
 ## Problèmes connus
 
 - Le nom des pièces jointes n'est pas personnalisable. Lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
   
 - J'ai supprimé un groupe mais il est encore présent lorsque je synchronise, pourquoi?  
-  Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!
-  
+  Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!  
+
     ---------------------------------------------------------------
 Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com/tag/plugin-signal)
