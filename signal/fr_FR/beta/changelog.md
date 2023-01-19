@@ -6,7 +6,9 @@
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
   
 # 19/01/2023  
-  - Amélioration: évite une erreur dans le fichier de log **http.error** lorsqu'on reçoit un message trop long. Message tronqué à 115 caractères maintenant.
+  - Amélioration: évite une erreur dans le fichier de log **http.error** lorsqu'on reçoit un message trop long. Message tronqué à 115 caractères maintenant.  
+  - Fix: Lors de la suppression d'un numéro, on supprime les fichiers laissés par le service API en même temps.  
+ 
 # 18/01/2023  
   - FIX: Dans certaines situations, des guillemets ou caractères spéciaux (retour ligne) pouvaient générer des erreurs dans jeedom.  
   
