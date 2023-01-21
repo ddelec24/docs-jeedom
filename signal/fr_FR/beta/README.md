@@ -125,6 +125,9 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
 - Dois-je avoir un numéro signal dédié pour jeedom?  
  > C'est vous qui voyez. Sur votre smartphone vous pouvez intéragir en envoyant sur votre propre numéro. Signal vous dira "Note à mon intention" mais la communication se fait sans problème!  
   
+- Lorsque je synchronise les groupes, il n'y en a aucun?  
+ > Il faut d'abord sauvegarder votre équipement pour pouvoir synchroniser les groupes.  
+  
 - Je n'arrive pas à associer un nouvel équipement / le QRcode n'apparaît pas et affiche une erreur.  
  > Tout d'abord, il faut être en local pour effectuer la manipulation.  
  Ensuite dans la configuration du plugin, il est impératif de désactiver la réception des messages, de sauvegarder, puis d'appuyer sur le bouton pour réinstaller le service. Une fois en route avec la pastille verte, vous devriez pouvoir ajouter le nouveau numéro. Pensez ensuite à faire la marche inverse en recochant la réception, sauvegarder et de nouveau une réinstallation du service! C'est une limitation dans le fonctionnement de l'API, on est obligé faire comme ça.  
