@@ -5,6 +5,9 @@
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
   
+# 22/01/2023  
+  - Nouvelle fonctionnalité: Cron journalier pour récupérer le dernier message. Lorsque l'on est pas en réception automatique des messages, il faut quand même recevoir un message régulièrement pour que la liaison fonctionne (désactivation si pas de réception dans les 35 derniers jours). Permet aussi la synchronisation des groupes sans avoir activé la réception automatique des messages. 
+  
 # 19/01/2023  
   - Amélioration: évite une erreur dans le fichier de log **http.error** lorsqu'on reçoit un message trop long. Message tronqué à 115 caractères maintenant.  
   - Fix: Lors de la suppression d'un numéro, on supprime les fichiers laissés par le service API en même temps.  
