@@ -25,7 +25,7 @@
   - Support des groupes. Il est désormais possible d'envoyer un message à un groupe signal. Voir documentation pour la mise en place.  
 
 # 16/12/2022  
-  - FIX: Suite redémarrage de la machine, le service ne se relançait pas seul. à Vérifier si la correction est fonctionnelle pour tous.  
+  - FIX: Suite redémarrage de la machine, le service ne se relançait pas seul. à Vérifier si la correction est fonctionnelle pour tous. (Il faut relancer les dépendances)  
 
 # 14/12/2022  
   - Les retours à la ligne dans les messages sont désormais bien pris en comptes  
