@@ -10,7 +10,9 @@ Vous pouvez ainsi recevoir des notifications directement sur votre smartphone é
     
 ## Prérequis
 
-Même si c'est automatisé avec **Jeedom 4.2**, je précise que la connexion avec votre compte signal est isolée dans un container Docker, via le plugin *Docker Management* (plugin officiel de Jeedom). NPM et NodeJS sont aussi installés en même temps que le plugin.
+Même si c'est automatisé avec **Jeedom 4.2**, je précise que la connexion avec votre compte signal est isolée dans un container Docker, via le plugin *Docker Management* (plugin officiel de Jeedom). NPM et NodeJS sont aussi installés en même temps que le plugin.  
+
+/!\\ **Attention: L'espace disque nécessaire sera d'environ 7.5Go au total pour docker et l'image du plugin.** /!\\  
 
 La première fois, il vous faudra votre ou vos smartphones pour une autorisation via QRCode.  
   
