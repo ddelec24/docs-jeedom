@@ -107,6 +107,10 @@ Une autre méthode fonctionnelle et plus facile, c'est de rajouter une action et
 La seule limitation de cette méthode étant qu'on ne peut pas envoyer à un groupe Signal.
 Ca doit potentiellement fonctionner avec les autres plugins qui ont une fonction d'envoi de fichiers, me remonter l'information si c'est pas le cas.
   
+Si vous souhaitez envoyer un flux RTSP directement, vous pouvez le faire aussi avec l'envoi de fichier, mais en spécifiant dans le nom de fichier la variable rtspVideo. (le flux envoyé va durer 10 secondes). L'exemple ci-après sera plus parlant:  
+![image](https://user-images.githubusercontent.com/3704897/224321135-55e7a89e-81a8-48e3-ade2-f57291482568.png)  
+L'url que je donne correspond à ma caméra, il faudra bien entendu adapter à votre matériel.  
+
 En intéraction, on peut faire un système de Ask ou comme ceci:  
 ![image](https://user-images.githubusercontent.com/3704897/184937800-e43b6364-cf2b-4e0d-b34c-4b7d43de3283.png)  
 
