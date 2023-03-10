@@ -4,6 +4,9 @@
 > **IMPORTANT**  
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
+
+# 10/03/2023  
+  - Fix: Problème de redémarrage du container docker après une mise à jour ou un redémarrage de jeedom.  
   
 # 27/01/2023  
   - Amélioration: Les groupes n'ayant pas de nom ne sont plus synchronisés.  
