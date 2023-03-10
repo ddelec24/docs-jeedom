@@ -7,7 +7,7 @@
 
 # 10/03/2023  
   - Fix: Problème de redémarrage du container docker après une mise à jour ou un redémarrage de jeedom.  
-  - Ajout: On peut désormais fournir un flux RTSP qui va durer 10sec avant d'être envoyé.  
+  - Ajout: On peut désormais fournir un flux RTSP qui va durer 10sec avant d'être envoyé (voir documentation pour l'usage).  
   
 # 27/01/2023  
   - Amélioration: Les groupes n'ayant pas de nom ne sont plus synchronisés.  
