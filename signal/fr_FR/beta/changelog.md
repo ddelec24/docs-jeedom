@@ -5,6 +5,9 @@
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 
+# 18/06/2023  
+  - Exclusion du dossier contenant les pièces jointes lors du backup (évite d'alourdir le backup de jeedom)
+  
 # 10/03/2023  
   - Fix: Problème de redémarrage du container docker après une mise à jour ou un redémarrage de jeedom.  
   - Ajout: On peut désormais fournir un flux RTSP qui va durer 10sec avant d'être envoyé (voir documentation pour l'usage).  
