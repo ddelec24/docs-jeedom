@@ -64,6 +64,16 @@ L'association est faite. Vous pouvez actualiser la page de votre équipement apr
 
 Les messages reçus sont historisés 3 mois par défaut. Vous pouvez changer dans la configuration de la commande, bien évidemment.
 
+### Contacts  
+![image](https://github.com/ddelec24/docs-jeedom/assets/3704897/e2b192e9-217c-4501-a21a-6c8f5907ad3c)  
+
+Sur la page de configuration de votre équipement, vous pouvez voir les contacts synchronisés et leur attribuer un nom (l'API ne permet pas de récupérer le nom que vous avez choisi dans votre smartphone).  
+Cliquez sur le bouton pour afficher la fenêtre Vous pouvez activer la visibilité du numéro et personnaliser ce nom.  
+
+![image](https://github.com/ddelec24/docs-jeedom/assets/3704897/64229cfd-c8c7-4a87-a85b-f8d51fd37f4c)  
+
+Le bouton sauvegarder enregistre directement les changements. Il y a la croix en haut à droite lorsque vous avez terminé.  
+
 ## Activation de la réception
 
 Comme on fait les choses dans l'ordre, on ne peut activer la réception dans jeedom qu'une fois qu'un numéro est associé.  
