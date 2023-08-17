@@ -5,6 +5,10 @@
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 
+# 17/08/2023  
+  - Mise à jour de la librairie signal-api : version 0.67
+  - La synchronisation des contacts est effectuée (les noms ne remontent pas, juste les numéros). Possibilité d'envoyer à un contact hors d'un groupe. (Demande de Biscwii)  
+  
 # 18/06/2023  
   - Exclusion du dossier contenant les pièces jointes lors du backup (évite d'alourdir le backup de jeedom)
   
