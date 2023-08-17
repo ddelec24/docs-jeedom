@@ -6,7 +6,7 @@
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 
 # 17/08/2023  
-  - Mise à jour de la librairie signal-api : version 0.67
+  - Mise à jour de la librairie signal-api : version 0.67 (vous devez relancer les dépendances et relancer le service dans la configuration pour qu'elle soit en fonctionnement)  
   - La synchronisation des contacts est effectuée (les noms ne remontent pas, juste les numéros). Possibilité d'envoyer à un contact hors d'un groupe. (Demande de Biscwii)  
   
 # 18/06/2023  
