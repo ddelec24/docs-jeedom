@@ -1,6 +1,10 @@
 
 # CHANGELOG BETA
-  
+
+## 06/10/2023 - Fix: Problème de compatibilité entre plusieurs librairies python3.  
+Permet de résoudre l'erreur `cannot import name 'url_quote' from 'werkzeug.urls'`.  
+Si vous avez ce soucis, relancez les dépendances et le service, sinon ne touchez à rien.  
+
 ## 10/01/2023 - Work in Progress - Tentative d'implémentation MsmartHome  
 - Les équipements qui sont appairés avec l'application MsmartHome n'arrivent pas à communiquer correctement.  
 Première beta sur cette fonctionnalité: Possibilité de cocher MsmartHome dans la configuration générale du plugin.  
