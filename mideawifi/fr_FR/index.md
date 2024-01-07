@@ -4,6 +4,9 @@
 
 ![mideawifi_icon](https://user-images.githubusercontent.com/3704897/200172116-ac8de823-46a5-4ae3-9165-fbb591c640f7.png)
 
+> [!warning]  
+> MAJ 07/01/2023 => Midea est en train d'unifier leur cloud dans une seule et nouvelle appli mobile smarthome, rendant le fonctionnement de mon plugin hazardeux. Aucune garantie de fonctionnement!"}  
+
 
 Mideawifi permet de contrôler et historiser les informations de climatiseurs construits par **[Midea](https://fr.wikipedia.org/wiki/Midea)** avec modules Wi-Fi. 
 Si vous utilisez l'application smartphone **Nethome plus**, **Midea Air** ou **MSmartHome**, c'est probablement le constructeur Midea qui est derrière le contrôleur de climatiseur.  
