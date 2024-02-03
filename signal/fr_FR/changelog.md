@@ -8,6 +8,8 @@
 
 # Version du 03/02/2024  
   - Mise à jour du client signal-cli-rest en version 0.80, suite au message `signal-cli version is too old for the Signal-Server` de la version 0.64
+
+Merci de relancer le service dans la page de configuration pour que ce changement soit pris en compte.
   
 # Version du 17/01/2023  
   - Fix bug lors d'envoi de messages simples contenant un guillemet
