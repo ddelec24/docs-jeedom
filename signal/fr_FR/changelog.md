@@ -7,7 +7,7 @@
 > Pour consulter le changelog BETA, [c'est ici](https://ddelec24.github.io/docs-jeedom/signal/fr_FR/beta/changelog)  
 
 # Version du 03/02/2024  
-  - Mise à jour de la du client signal-cli-rest en version 0.80, suite au message `signal-cli version is too old for the Signal-Server` de la version 0.64
+  - Mise à jour du client signal-cli-rest en version 0.80, suite au message `signal-cli version is too old for the Signal-Server` de la version 0.64
   
 # Version du 17/01/2023  
   - Fix bug lors d'envoi de messages simples contenant un guillemet
