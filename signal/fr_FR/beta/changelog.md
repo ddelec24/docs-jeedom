@@ -7,6 +7,8 @@
 
 # Version du 03/02/2024  
   - Mise à jour du client signal-cli-rest en version 0.80
+  
+  Merci de relancer le service dans la page de configuration pour que ce changement soit pris en compte.
 
 # 17/08/2023  
   - Mise à jour de la librairie signal-api : version 0.67 (vous devez relancer les dépendances et relancer le service dans la configuration pour qu'elle soit en fonctionnement)  
