@@ -5,6 +5,9 @@
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 
+# Version du 09/02/2024  
+  - Mise à jour du client signal-cli-rest en version 0.80, suite au message `signal-cli version is too old for the Signal-Server`
+  
 # Version du 03/02/2024  
   - Mise à jour du client signal-cli-rest en version 0.80
   
