@@ -6,6 +6,11 @@
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 > Pour consulter le changelog BETA, [c'est ici](https://ddelec24.github.io/docs-jeedom/signal/fr_FR/beta/changelog)  
 
+# Version du 08/04/2024  
+  - Mise à jour du client signal-cli-rest en version 0.81
+  - Fix de différents bugs (guillemets, noms de groupes vides, problème de restart automatique  
+  - Support de l'argument rtspVideo pour l'envoi de vidéo en pièce jointe (voir documentation)  
+
 # Version du 09/02/2024  
   - Mise à jour du client signal-cli-rest en version 0.80, suite au message `signal-cli version is too old for the Signal-Server`
   
