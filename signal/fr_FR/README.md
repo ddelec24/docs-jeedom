@@ -10,7 +10,9 @@ Vous pouvez ainsi recevoir des notifications directement sur votre smartphone é
     
 ## Prérequis
 
-Même si c'est automatisé avec **Jeedom 4.2**, je précise que la connexion avec votre compte signal est isolée dans un container Docker, via le plugin *Docker Management* (plugin officiel de Jeedom). NPM et NodeJS sont aussi installés en même temps que le plugin.
+Même si c'est automatisé avec **Jeedom 4.2**, je précise que la connexion avec votre compte signal est isolée dans un container Docker, via le plugin *Docker Management* (plugin officiel de Jeedom). NPM et NodeJS sont aussi installés en même temps que le plugin.  
+
+/!\\ **Attention: L'espace disque nécessaire sera d'environ 7.5Go au total pour docker et l'image du plugin.** /!\\  
 
 La première fois, il vous faudra votre ou vos smartphones pour une autorisation via QRCode.  
   
@@ -62,6 +64,16 @@ L'association est faite. Vous pouvez actualiser la page de votre équipement apr
 
 Les messages reçus sont historisés 3 mois par défaut. Vous pouvez changer dans la configuration de la commande, bien évidemment.
 
+### Contacts  
+![image](https://github.com/ddelec24/docs-jeedom/assets/3704897/e2b192e9-217c-4501-a21a-6c8f5907ad3c)  
+
+Sur la page de configuration de votre équipement, vous pouvez voir les contacts synchronisés et leur attribuer un nom (l'API ne permet pas de récupérer le nom que vous avez choisi dans votre smartphone).  
+Cliquez sur le bouton pour afficher la fenêtre Vous pouvez activer la visibilité du numéro et personnaliser ce nom.  
+
+![image](https://github.com/ddelec24/docs-jeedom/assets/3704897/64229cfd-c8c7-4a87-a85b-f8d51fd37f4c)  
+
+Le bouton sauvegarder enregistre directement les changements. Il y a la croix en haut à droite lorsque vous avez terminé.  
+
 ## Activation de la réception
 
 Comme on fait les choses dans l'ordre, on ne peut activer la réception dans jeedom qu'une fois qu'un numéro est associé.  
@@ -86,7 +98,7 @@ Lorsque tout est fonctionnel et que vous revenez dans un de vos équipements/com
 Cliquez simplement sur les flêches en cercle et ils apparaîtront.  
   
 ![image](https://user-images.githubusercontent.com/3704897/209935747-ce854520-4752-4301-b5a5-63cdf6ed4828.png)  
-  
+    
 ## Utilisation en scénarios
 
 Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voici quelques exemples simples:  
@@ -94,13 +106,21 @@ Là où on peut avoir plus de possibilités, c'est bien dans les scénarios. Voi
 ![image](https://user-images.githubusercontent.com/3704897/185191241-bd9b8230-702c-431f-ab74-66cd14ffbb2e.png) 
 
 Sélectionnez la commande action qui va envoyer le message (et donc le numéro qui sera utilisé en tant qu'expéditeur), mettez votre message et le numéro qui doit recevoir le message (Attention il doit aussi exister dans le plugin et être actif!).  
-Vous pouvez aussi l'envoyer à un groupe, voir section précédente pour synchroniser.  
-![image](https://user-images.githubusercontent.com/3704897/209936117-09be78b8-88db-4b38-ab26-2a028c30399a.png)  
+Vous pouvez aussi l'envoyer à un groupe ou un de vos contacts, voir section précédente pour synchroniser.  
+![image](https://github.com/ddelec24/docs-jeedom/assets/3704897/01ccbddc-3624-4ecd-abee-5820aac73166)  
   
 Dans le cadre d'une pièce-jointe. vous pouvez utiliser une variable, un tag, une commande, peut importe. La valeur doit être soit un **lien internet**, soit un **chemin local** (exemple: */home/jeedom/ma_video.mp4*)  
 Dans ma capture ci-dessus, je recevrais un screenshot de ma caméra.  
   
+Une autre méthode fonctionnelle et plus facile, c'est de rajouter une action et mettre la commande "Enregistrer" du plugin caméra:  
+![image](https://user-images.githubusercontent.com/3704897/212467264-11f8b356-c86a-4407-8c06-2cd3d88fa92a.png)  
+La seule limitation de cette méthode étant qu'on ne peut pas envoyer à un groupe Signal.
+Ca doit potentiellement fonctionner avec les autres plugins qui ont une fonction d'envoi de fichiers, me remonter l'information si c'est pas le cas.
   
+Si vous souhaitez envoyer un flux RTSP directement, vous pouvez le faire aussi avec l'envoi de fichier, mais en spécifiant dans le nom de fichier la variable rtspVideo. (le flux envoyé va durer 10 secondes). L'exemple ci-après sera plus parlant:  
+![image](https://user-images.githubusercontent.com/3704897/224321135-55e7a89e-81a8-48e3-ade2-f57291482568.png)  
+L'url que je donne correspond à ma caméra, il faudra bien entendu adapter à votre matériel.  
+
 En intéraction, on peut faire un système de Ask ou comme ceci:  
 ![image](https://user-images.githubusercontent.com/3704897/184937800-e43b6364-cf2b-4e0d-b34c-4b7d43de3283.png)  
 
@@ -121,10 +141,19 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
 - Dois-je avoir un numéro signal dédié pour jeedom?  
  > C'est vous qui voyez. Sur votre smartphone vous pouvez intéragir en envoyant sur votre propre numéro. Signal vous dira "Note à mon intention" mais la communication se fait sans problème!  
   
+- Lorsque je synchronise les groupes, il n'y en a aucun?  
+ > Il faut d'abord sauvegarder votre équipement pour pouvoir synchroniser les groupes.  
+  
 - Je n'arrive pas à associer un nouvel équipement / le QRcode n'apparaît pas et affiche une erreur.  
  > Tout d'abord, il faut être en local pour effectuer la manipulation.  
+ Premièrement, il faut vérifier que vous ayez bien configuré votre jeedom. Dans "**Réglages** => **Système** => Configuration**", onglet "**Réseaux**", il faut avoir mis l'adresse IP de votre serveur jeedom dans réseau interne. Ça commencera probablement *192.168*, si vous ne savez pas, n'hésitez pas à regarder sur le community jeedom, ça a déjà été demandé.  
  Ensuite dans la configuration du plugin, il est impératif de désactiver la réception des messages, de sauvegarder, puis d'appuyer sur le bouton pour réinstaller le service. Une fois en route avec la pastille verte, vous devriez pouvoir ajouter le nouveau numéro. Pensez ensuite à faire la marche inverse en recochant la réception, sauvegarder et de nouveau une réinstallation du service! C'est une limitation dans le fonctionnement de l'API, on est obligé faire comme ça.  
   
+- J'ai un message jeedom disant que **network tmp_default is ambiguous**:  
+ > ![image](https://user-images.githubusercontent.com/3704897/218264008-c33d1bb4-04cf-4f30-81e4-f8e87cff6e26.png)  
+ Peut-être avez vous cliquez plusieurs fois d'affilé sur le bouton d'installation du service? il faut être patient. Pour corriger le soucis, se connecter en ligne de commande / ssh et faire:  
+ `sudo docker network rm tmp_default`  
+ 
 - J'ai un message m'indiquant *"Erreur d'exécution de la commande : sudo docker-compose -f /tmp/XXXXXXXX.yml up -d --force-recreate(1) => []"*. Que dois-je faire?  
  > Cela peut arriver la première fois. Le service docker met un certain temps à s'initialiser. Patientez 5 minutes puis retenter d'activer le service signal Api dans la page de configuration.  
   
@@ -143,7 +172,7 @@ Dans tous les cas, il faudra regarder au préalable les logs du plugin pour avoi
 - Le nom des pièces jointes n'est pas personnalisable. Lorsqu'il s'agit d'un fichier qui n'est pas une image/vidéo et donc ne s'affiche pas directement dans la conversation, le nom sera une suite de caractères aléatoire. Le développeur à implanté la fonctionnalité de personnalisation il y a une dizaine de jours, j'attends qu'il mette ça en production !  
   
 - J'ai supprimé un groupe mais il est encore présent lorsque je synchronise, pourquoi?  
-  Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!  
-
+  Malgré suppression sur votre téléphone, Signal garde en rétention le groupe (au moins 15 jours / 1 mois), le plugin le récupère donc et je n'ai pas possibilité de savoir si un groupe est supprimé ou non. Retentez plus tard, rien de grave!
+  
     ---------------------------------------------------------------
 Pour toutes autres questions, merci de regarder si il n'y a pas déjà une réponse à votre interrogation, sinon demandez sur le [community jeedom](https://community.jeedom.com/tag/plugin-signal)
