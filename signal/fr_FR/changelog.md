@@ -5,13 +5,14 @@
 >    
 > S'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte.  
 > Pour consulter le changelog BETA, [c'est ici](https://ddelec24.github.io/docs-jeedom/signal/fr_FR/beta/changelog)  
-
+  
+# Version du 18/08/2026
+  - Suite à la [PR #6](https://github.com/ddelec24/plugin-signalapi/pull/6), ajoute la possibilité dans les scénarios de faire de la mise en forme.
+  
 # Version du 22/04/2026  
   - Mise à jour du client signal-cli-rest en version 0.98  
 Merci de relancer le service dans la page de configuration pour que ce changement soit pris en compte.
-
-
-
+  
 # Version du 08/04/2024  
   - Mise à jour du client signal-cli-rest en version 0.81
   - Fix de différents bugs (guillemets, noms de groupes vides, problème de restart automatique  
