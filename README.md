@@ -25,3 +25,11 @@
 
 - [Documentation Beta](https://ddelec24.github.io/docs-jeedom/signal/fr_FR/beta)  
 - [Changelog Beta](https://ddelec24.github.io/docs-jeedom/signal/fr_FR/beta/changelog)  
+
+## Plugin JeeDiscord
+
+- [Documentation](https://ddelec24.github.io/docs-jeedom/jeediscord/fr_FR)  
+- [Changelog](https://ddelec24.github.io/docs-jeedom/jeediscord/fr_FR/changelog)  
+
+- [Documentation Beta](https://ddelec24.github.io/docs-jeedom/jeediscord/fr_FR/beta)  
+- [Changelog Beta](https://ddelec24.github.io/docs-jeedom/jeediscord/fr_FR/beta/changelog)  
